@@ -1,10 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import "./styles.css";
+import { NavLink } from "react-router-dom";
 function NavBar() {
 	return (
 		<div className="navbar">
-			<Link to="/">Talleres</Link>
-			<Link to="/rincones">Rincones</Link>
+			<NavLink exact to="/">
+				Talleres
+			</NavLink>
+			<NavLink to="/rincones">Rincones</NavLink>
 		</div>
 	);
 }

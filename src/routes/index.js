@@ -7,14 +7,16 @@ function RoutesApp() {
 	return (
 		<Router>
 			<NavBar />
-			<Switch>
-				<Route exact path="/">
-					<Talleres />
-				</Route>
-				<Route path="/rincones">
-					<Rincones />
-				</Route>
-			</Switch>
+			<div className="site-container">
+				<Switch>
+					<Route exact path="/">
+						<Talleres />
+					</Route>
+					<Route path="/rincones">
+						<Rincones />
+					</Route>
+				</Switch>
+			</div>
 		</Router>
 	);
 }

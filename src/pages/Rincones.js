@@ -2,7 +2,7 @@ import React from "react";
 
 function Rincones() {
 	return (
-		<div>
+		<div id="rincones">
 			<h1>Rincones</h1>
 		</div>
 	);

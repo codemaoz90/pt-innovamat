@@ -6,11 +6,7 @@ function App() {
 	// 	console.log(fav);
 	// 	setFav(!fav);
 	// }
-	return (
-		<div>
-			<RoutesApp />
-		</div>
-	);
+	return <RoutesApp />;
 }
 
 export default App;
