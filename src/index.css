@@ -34,6 +34,7 @@ img {
 }
 .article-header h2 {
 	margin-bottom: 0.5rem;
+	font-size: 1rem;
 }
 p {
 	font-size: 14px;
@@ -61,7 +62,7 @@ button:hover {
 	}
 	.article-card {
 		display: grid;
-		grid-template-rows: 220px 1f;
+		grid-template-rows: 210px 1fr;
 	}
 	.article-header h2 {
 		font-size: 1rem;

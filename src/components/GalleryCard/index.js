@@ -1,16 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "../Card";
 function GalleryCard(props) {
-	console.log("PROPS =>>> ", props);
+	const [talleres] = useState(props.section);
+	const [ordered, setOrdered] = useState(true);
+
+	// Method to order A-Z by title.
+	function orderAsc() {
+		if (ordered) {
+			talleres.resources.sort((a, b) =>
+				b["title"].localeCompare(a.title)
+			);
+
+			setOrdered(!ordered);
+		} else {
+			talleres.resources.sort((a, b) =>
+				a["title"].localeCompare(b.title)
+			);
+			setOrdered(!ordered);
+		}
+	}
 	return (
 		<>
 			<div className="article-header">
-				<h2>{props.section.sectionName}</h2>
-				<button>Ordenar A-Z</button>
+				<h2>{talleres.sectionName}</h2>
+				<button onClick={orderAsc}>Ordenar A-Z</button>
 			</div>
 
 			<div className="article-container ">
-				{props.section.resources.map((resource, index) => {
+				{talleres.resources.map((resource, index) => {
 					return <Card key={index} resource={resource} />;
 				})}
 			</div>

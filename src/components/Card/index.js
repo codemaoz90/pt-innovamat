@@ -13,7 +13,7 @@ function Card({ resource }) {
 
 					<div className="name">{resource.title}</div>
 					<p>{resource.description}</p>
-					<Heart />
+					<Heart resource={resource} />
 				</div>
 			</div>
 		</>
