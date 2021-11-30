@@ -45,8 +45,6 @@ function Talleres() {
 		setbuttonFavorite(!buttonFavorite);
 	};
 
-	const messageInfo = message && <h1>Aún no tenemos favoritos!!</h1>;
-
 	return (
 		<section id="talleres">
 			<div className="section-header">
