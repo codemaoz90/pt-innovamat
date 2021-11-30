@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-import DetailCard from "../components/DetailCard";
-
+import "../ultils/main.js";
 import GalleryCard from "../components/GalleryCard";
 function Talleres() {
 	const [talleres, setTalleres] = useState([]);
