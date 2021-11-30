@@ -12,7 +12,14 @@ img {
 
 	object-fit: cover;
 }
+.section-header {
+	display: flex;
+	justify-content: space-between;
+}
 
+.section-header > button {
+	color: #18c6ac;
+}
 .site-container {
 	margin: 5rem auto;
 
