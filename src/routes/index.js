@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Talleres from "../pages/Talleres";
 import Rincones from "../pages/Rincones";
 import NavBar from "../components/NavBar";
+import DetailCard from "../components/DetailCard";
 
 function RoutesApp() {
 	return (
@@ -15,6 +16,7 @@ function RoutesApp() {
 					<Route path="/rincones">
 						<Rincones />
 					</Route>
+					<Route path="/taller/:id" component={DetailCard} />
 				</Switch>
 			</div>
 		</Router>

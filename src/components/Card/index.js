@@ -1,13 +1,14 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 import Heart from "../Heart";
 import "./styles.css";
 function Card({ resource }) {
 	return (
 		<>
 			<div className="article-card">
-				<img src={resource.image} alt={resource.description} />
-
+				<Link to={`taller/${resource.id}`}>
+					<img src={resource.image} alt={resource.description} />
+				</Link>
 				<div className="card__details">
 					<span className="tag">{resource.tag}</span>
 

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Card from "../components/Card";
+import DetailCard from "../components/DetailCard";
 
 import GalleryCard from "../components/GalleryCard";
 function Talleres() {
@@ -52,7 +52,9 @@ function Talleres() {
 		<section id="talleres">
 			<div className="section-header">
 				<h1>Talleres</h1>
-				<button onClick={() => getFavorites()}>Ver favoritos</button>
+				<button onClick={() => getFavorites()}>
+					{buttonFavorite === false ? "Ver favoritos" : "Volver"}
+				</button>
 			</div>
 
 			{myFavoritesFiltered && buttonFavorite === true && (

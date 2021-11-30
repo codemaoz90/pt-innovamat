@@ -109,7 +109,7 @@ const Heart = (props) => {
 				></div>
 				<span className={spanClasses}>Favorito</span>
 			</div>
-			<pre>{props.resource.id}</pre>
+			{/* <pre>{props.resource.id}</pre> */}
 		</>
 	);
 };

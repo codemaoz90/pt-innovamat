@@ -1,0 +1,8 @@
+.info-description > p {
+	color: black;
+}
+
+.video-youtube {
+	width: calc(100% - 20px);
+	object-fit: contain;
+}
