@@ -49,7 +49,9 @@ function Rincones() {
 		<section id="rincones">
 			<div className="section-header">
 				<h1>Rincones</h1>
-				<button onClick={() => getFavorites()}>Ver favoritos</button>
+				<button onClick={() => getFavorites()}>
+					{buttonFavorite === false ? "Ver favoritos" : "Volver"}
+				</button>
 			</div>
 
 			{myFavoritesFiltered && buttonFavorite === true && (
