@@ -5,7 +5,7 @@ import GalleryCard from "../components/GalleryCard";
 function Talleres() {
 	const [talleres, setTalleres] = useState([]);
 	const [myFavoritesFiltered, setMyFavoritesFiltered] = useState(null);
-	const [myFavorites, setMyFavorites] = useState(false);
+	const [buttonFavorite, setbuttonFavorite] = useState(false);
 	const [message, setMessage] = useState(false);
 
 	const apiTaller = "https://api.mocklets.com/mock68016/talleres";
@@ -17,7 +17,6 @@ function Talleres() {
 				const data = await response.json();
 
 				setTalleres(data);
-				// console.log(data);
 			} catch (e) {
 				console.log(e);
 			}
@@ -30,7 +29,7 @@ function Talleres() {
 		const favoritesCards = JSON.parse(
 			localStorage.getItem("Talleres-favorites")
 		);
-		// console.log(favoritesCards);
+
 		if (favoritesCards === null) {
 			setMessage(true);
 		} else {
@@ -38,11 +37,11 @@ function Talleres() {
 				resources: favoritesCards,
 				sectionName: "Talleres Favoritos",
 			};
-			// console.log(sectionFavoriteFromLocalStorage);
+
 			setMyFavoritesFiltered(sectionFavoriteFromLocalStorage);
 			setMessage(false);
 		}
-		setMyFavorites(!myFavorites);
+		setbuttonFavorite(!buttonFavorite);
 	};
 
 	const messageInfo = message && <h1>No tenemos favoritos!!</h1>;
@@ -54,11 +53,11 @@ function Talleres() {
 
 			{messageInfo}
 
-			{myFavorites === true && (
+			{buttonFavorite === true && (
 				<GalleryCard section={myFavoritesFiltered} />
 			)}
 
-			{myFavorites === false &&
+			{buttonFavorite === false &&
 				talleres.map((section, index) => {
 					return <GalleryCard key={index} section={section} />;
 				})}
