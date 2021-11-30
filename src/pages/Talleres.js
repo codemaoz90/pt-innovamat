@@ -27,30 +27,37 @@ function Talleres() {
 	}, []);
 
 	const getFavorites = () => {
-		const favoritesCards = JSON.parse(localStorage.getItem("favorites"));
-		console.log(favoritesCards);
+		const favoritesCards = JSON.parse(
+			localStorage.getItem("Talleres-favorites")
+		);
+		// console.log(favoritesCards);
 		if (favoritesCards === null) {
 			setMessage(true);
 		} else {
-			setMyFavoritesFiltered(favoritesCards);
+			const sectionFavoriteFromLocalStorage = {
+				resources: favoritesCards,
+				sectionName: "Talleres Favoritos",
+			};
+			// console.log(sectionFavoriteFromLocalStorage);
+			setMyFavoritesFiltered(sectionFavoriteFromLocalStorage);
+			setMessage(false);
 		}
 		setMyFavorites(!myFavorites);
-		setMessage(!message);
 	};
 
 	const messageInfo = message && <h1>No tenemos favoritos!!</h1>;
-	const favorites =
-		myFavoritesFiltered &&
-		myFavoritesFiltered.map((favoriteEL) => {
-			return <Card resource={favoriteEL} />;
-		});
+
 	return (
 		<div id="talleres">
 			<h1>Talleres</h1>
 			<button onClick={() => getFavorites()}>myfavorites</button>
 
 			{messageInfo}
-			{myFavorites === true && favorites}
+
+			{myFavorites === true && (
+				<GalleryCard section={myFavoritesFiltered} />
+			)}
+
 			{myFavorites === false &&
 				talleres.map((section, index) => {
 					return <GalleryCard key={index} section={section} />;
