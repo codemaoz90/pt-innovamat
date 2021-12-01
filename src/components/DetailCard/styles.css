@@ -6,3 +6,10 @@
 	width: calc(100% - 20px);
 	object-fit: contain;
 }
+
+.backLink {
+	color: #18c6ac;
+	font-weight: 800;
+
+	/* text-decoration: none; */
+}

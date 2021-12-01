@@ -102,11 +102,11 @@ const Heart = (props) => {
 	};
 	return (
 		<>
-			<div className="heart-container">
-				<div
-					onClick={() => removeAddFavorites()}
-					className={hearClasess}
-				></div>
+			<div
+				onClick={() => removeAddFavorites()}
+				className="heart-container"
+			>
+				<div className={hearClasess}></div>
 				<span className={spanClasses}>Favorito</span>
 			</div>
 			{/* <pre>{props.resource.id}</pre> */}

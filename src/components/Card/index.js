@@ -6,16 +6,16 @@ function Card({ resource }) {
 	return (
 		<>
 			<div className="article-card">
-				<Link to={`taller/${resource.id}`}>
-					<img src={resource.image} alt={resource.description} />
-				</Link>
+				<img src={resource.image} alt={resource.description} />
 				<div className="card__details">
 					<span className="tag">{resource.tag}</span>
 
-					<div className="name">{resource.title}</div>
-					<p>{resource.description}</p>
-					<Heart resource={resource} />
+					<Link className="card-link" to={`taller/${resource.id}`}>
+						<div className="name">{resource.title}</div>
+						<p>{resource.description}</p>
+					</Link>
 				</div>
+				<Heart resource={resource} />
 			</div>
 		</>
 	);

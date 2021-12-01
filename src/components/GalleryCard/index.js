@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import Card from "../Card";
 function GalleryCard(props) {
 	const [talleres] = useState(props.section);

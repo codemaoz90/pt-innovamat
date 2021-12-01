@@ -4,12 +4,20 @@
 	border-radius: 8px;
 
 	border: solid 1px #bacdd8;
-
-	/* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 }
 
 .card__details {
 	padding: 16px 8px 8px 8px;
+}
+
+.card-link {
+	text-decoration: none;
+	color: black;
+}
+
+.card-link:focus,
+.card-link:hover {
+	color: gray;
 }
 
 .tag {
