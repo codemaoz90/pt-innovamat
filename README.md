@@ -21,9 +21,6 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="">
-    <img src="/src/assets/img/logo.png" alt="Logo" style="object-fit:contain" width="100" height="100">
-  </a>
 
   <h3 align="center">Innovamat Prueba Tecnica</h3>
 
@@ -64,7 +61,7 @@
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-### Contruido con
+### Built With
 
 -   [React.js](https://reactjs.org/)
 
@@ -83,13 +80,19 @@ Para poder ejecutar el programana necesitaremos seguir los siguientes pasos, que
 El primer paso es hacer una copia en local del proyecto con el siguiente comando en la terminal.
 
 -   Terminal
-    `sh git clone git@github.com:codemaoz90/pt-innovamat.git `
+
+    ```sh
+    git clone git@github.com:codemaoz90/pt-innovamat.git
+    ```
 
     A continuacion, realizaremos la instalacion de las dependencias con el siguiente comando:
     <br>
 
 -   Terminal
-    `sh npm install `
+
+    ```sh
+      npm install
+    ```
 
     o
 
@@ -127,4 +130,4 @@ Link del proyecto: [https://github.com/codemaoz90/pt-innovamat](https://github.c
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/manuel-ochoaz/
-[product-screenshot]: src/assets/img/product-img.jpg
+[product-screenshot]: /src/assets/img/innova-screenshot.png
