@@ -63,7 +63,7 @@
 
 ### Built With
 
--   [React.js](https://reactjs.org/)
+- [React.js](https://reactjs.org/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -79,38 +79,38 @@ Para poder ejecutar el programana necesitaremos seguir los siguientes pasos, que
 
 El primer paso es hacer una copia en local del proyecto con el siguiente comando en la terminal.
 
--   Terminal
+- Terminal
 
-    ```sh
-    git clone git@github.com:codemaoz90/pt-innovamat.git
-    ```
+  ```sh
+  git clone git@github.com:codemaoz90/pt-innovamat.git
+  ```
 
-    A continuacion, realizaremos la instalacion de las dependencias con el siguiente comando:
-    <br>
+  A continuacion, realizaremos la instalacion de las dependencias con el siguiente comando:
+  <br>
 
--   Terminal
+- Terminal
 
-    ```sh
-      npm install
-    ```
+  ```sh
+    npm install
+  ```
 
-    o
+  o
 
-        ```sh
+      ```sh
         yarn install
-        ```
+      ```
 
-    Para finalizar el comando que ejecutara el programa
-    <br>
+  Para finalizar el comando que ejecutara el programa
+  <br>
 
--   Terminal
-    ```sh
-    npm start
-    ```
-    o
-    ```sh
-    yarn start
-    ```
+- Terminal
+  ```sh
+  npm start
+  ```
+  o
+  ```sh
+  yarn start
+  ```
 
 <!-- CONTACT -->
 
